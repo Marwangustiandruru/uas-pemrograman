@@ -14,6 +14,8 @@ public class Book {
  private String writer;
  @Column(nullable = false)
  private String isbn;
+private String price;
+
  public Book() {
  }
  public Long getId() {
@@ -39,5 +41,10 @@ public class Book {
  }
  public void setIsbn(String isbn) {
  this.isbn = isbn;
+public String getPrice() {
+ return price;
+ }
+public void setPrice(String price) {
+ this.price = price;
  }
 }
